@@ -1,0 +1,9 @@
+c:\users\sports\documents\visual studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\Feyenoord_Selligent_Integration.exe.config
+c:\users\sports\documents\visual studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\obj\Debug\Feyenoord_Selligent_Integration.csprojResolveAssemblyReference.cache
+c:\users\sports\documents\visual studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\Feyenoord_Selligent_Integration.exe
+c:\users\sports\documents\visual studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\Feyenoord_Selligent_Integration.pdb
+c:\users\sports\documents\visual studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\obj\Debug\Feyenoord_Selligent_Integration.exe
+c:\users\sports\documents\visual studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\obj\Debug\Feyenoord_Selligent_Integration.pdb
+C:\Users\Sports\Documents\Visual Studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\RestSharp.dll
+C:\Users\Sports\Documents\Visual Studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\RestSharp.xml
+C:\Users\Sports\Documents\Visual Studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\CommandLine.dll
