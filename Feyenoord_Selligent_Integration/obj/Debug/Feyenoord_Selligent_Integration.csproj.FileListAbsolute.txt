@@ -7,3 +7,10 @@ c:\users\sports\documents\visual studio 2015\Projects\Feyenoord_Selligent_Integr
 C:\Users\Sports\Documents\Visual Studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\RestSharp.dll
 C:\Users\Sports\Documents\Visual Studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\RestSharp.xml
 C:\Users\Sports\Documents\Visual Studio 2015\Projects\Feyenoord_Selligent_Integration\Feyenoord_Selligent_Integration\bin\Debug\CommandLine.dll
+C:\Users\sislam.CORP\Documents\GitHub\feyenoord_selligent_integration\Feyenoord_Selligent_Integration\bin\Debug\Feyenoord_Selligent_Integration.exe.config
+C:\Users\sislam.CORP\Documents\GitHub\feyenoord_selligent_integration\Feyenoord_Selligent_Integration\bin\Debug\Feyenoord_Selligent_Integration.exe
+C:\Users\sislam.CORP\Documents\GitHub\feyenoord_selligent_integration\Feyenoord_Selligent_Integration\bin\Debug\Feyenoord_Selligent_Integration.pdb
+C:\Users\sislam.CORP\Documents\GitHub\feyenoord_selligent_integration\Feyenoord_Selligent_Integration\obj\Debug\Feyenoord_Selligent_Integration.csproj.CoreCompileInputs.cache
+C:\Users\sislam.CORP\Documents\GitHub\feyenoord_selligent_integration\Feyenoord_Selligent_Integration\obj\Debug\Feyenoord_Selligent_Integration.csproj.CopyComplete
+C:\Users\sislam.CORP\Documents\GitHub\feyenoord_selligent_integration\Feyenoord_Selligent_Integration\obj\Debug\Feyenoord_Selligent_Integration.exe
+C:\Users\sislam.CORP\Documents\GitHub\feyenoord_selligent_integration\Feyenoord_Selligent_Integration\obj\Debug\Feyenoord_Selligent_Integration.pdb

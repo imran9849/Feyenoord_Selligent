@@ -66,6 +66,63 @@ namespace Feyenoord_Selligent_Integration
             return ds;
 
         }
+
+        public static DataTable ap_GetTixData(int BatchID)
+        {
+            #region establish sql connection
+            SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
+            SqlCommand cmd = new SqlCommand();
+            #endregion
+
+            #region open connection
+            if (sqlconn.State != ConnectionState.Open)
+                sqlconn.Open();
+            #endregion
+
+            cmd.Parameters.Clear();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "ap_GetTixData";
+            cmd.Parameters.AddWithValue("@BatchID", BatchID);
+            cmd.Connection = sqlconn;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+
+            #region open connection
+            if (sqlconn.State == ConnectionState.Open)
+                sqlconn.Close();
+            #endregion
+            return ds;
+
+        }
+        public static DataTable ap_GetMerData(int BatchID)
+        {
+            #region establish sql connection
+            SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
+            SqlCommand cmd = new SqlCommand();
+            #endregion
+
+            #region open connection
+            if (sqlconn.State != ConnectionState.Open)
+                sqlconn.Open();
+            #endregion
+
+            cmd.Parameters.Clear();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "ap_GetMerData";
+            cmd.Parameters.AddWithValue("@BatchID", BatchID);
+            cmd.Connection = sqlconn;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+
+            #region open connection
+            if (sqlconn.State == ConnectionState.Open)
+                sqlconn.Close();
+            #endregion
+            return ds;
+
+        }
         public static DataTable ap_GetDownloadedfileName()
         {
             #region establish sql connection
@@ -121,6 +178,7 @@ namespace Feyenoord_Selligent_Integration
             return ds;
 
         }
+
 
         public static void sendEmail(string _clubid, string _errormessage)
         {
@@ -276,7 +334,7 @@ namespace Feyenoord_Selligent_Integration
             #endregion
         }
 
-        public static void ap_UpdateSuccess(string batchiD, string FileName, string RC)
+        public static void ap_UpdateSuccess(string batchiD, string FileName, string RC, string FileType)
         {
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
@@ -293,6 +351,8 @@ namespace Feyenoord_Selligent_Integration
             cmd.Parameters.Clear();
             cmd.Parameters.Add("@BatchID", batchiD);
             cmd.Parameters.Add("@FileName", FileName);
+            cmd.Parameters.Add("@FileType", FileType);
+
             cmd.Parameters.Add("@RC", RC);
             cmd.ExecuteNonQuery();
 
@@ -301,6 +361,7 @@ namespace Feyenoord_Selligent_Integration
                 sqlconn.Close();
             #endregion
         }
+
 
         public static string GetDatacolumnType(DataTable dt, DataRow dr, int ordinal)
         {
