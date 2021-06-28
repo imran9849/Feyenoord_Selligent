@@ -122,6 +122,37 @@ namespace Feyenoord_Selligent_Integration
             #endregion
             return ds;
 
+
+        }
+
+        public static DataTable ap_GetActiveTagData(int BatchID)
+        {
+            #region establish sql connection
+            SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
+            SqlCommand cmd = new SqlCommand();
+            #endregion
+
+            #region open connection
+            if (sqlconn.State != ConnectionState.Open)
+                sqlconn.Open();
+            #endregion
+
+            cmd.Parameters.Clear();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "ap_GetActiveTagData";
+            cmd.Parameters.AddWithValue("@BatchID", BatchID);
+            cmd.Connection = sqlconn;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+
+            #region open connection
+            if (sqlconn.State == ConnectionState.Open)
+                sqlconn.Close();
+            #endregion
+            return ds;
+
+
         }
         public static DataTable ap_GetDownloadedfileName()
         {
