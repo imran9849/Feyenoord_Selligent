@@ -481,7 +481,7 @@ namespace Feyenoord_Selligent_Integration
                 {
                     _ftp.UploadFtpFile("IN", filename);
                     _ftp.UploadFtpFileFlag("IN", filename.Replace(".csv", ".flag"));
-                    Sql.ap_UpdateSuccess(_batchID.ToString(), filename, dtSyncData.Rows.Count.ToString(), "Merchandise");
+                    Sql.ap_UpdateSuccess(_batchID.ToString(), filename, dtSyncData.Rows.Count.ToString(), "ActiveTag");
                     Console.WriteLine("Successfully Uploaded file in FTP");
 
                 }
