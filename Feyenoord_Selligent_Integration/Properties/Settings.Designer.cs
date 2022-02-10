@@ -12,7 +12,7 @@ namespace Feyenoord_Selligent_Integration.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.6.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,21 +25,21 @@ namespace Feyenoord_Selligent_Integration.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql-prd-02.sportsalliance.com;Initial Catalog=Feyenoord_Selligent_Int" +
-            "egration;Persist Security Info=True;User ID=sa-admin;Password=100%of22is22")]
-        public string SQLConn {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool KeepOpen {
             get {
-                return ((string)(this["SQLConn"]));
+                return ((bool)(this["KeepOpen"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool KeepOpen {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Feyenoord_Selligent_Integration;Integrated " +
+            "Security=True")]
+        public string SQLConn {
             get {
-                return ((bool)(this["KeepOpen"]));
+                return ((string)(this["SQLConn"]));
             }
         }
     }

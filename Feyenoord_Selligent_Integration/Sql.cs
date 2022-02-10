@@ -14,6 +14,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -30,7 +31,7 @@ namespace Feyenoord_Selligent_Integration
             DataTable ds = new DataTable();
             da.Fill(ds);
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -43,6 +44,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -59,7 +61,7 @@ namespace Feyenoord_Selligent_Integration
             DataTable ds = new DataTable();
             da.Fill(ds);
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -72,6 +74,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -88,7 +91,7 @@ namespace Feyenoord_Selligent_Integration
             DataTable ds = new DataTable();
             da.Fill(ds);
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -100,6 +103,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -116,7 +120,7 @@ namespace Feyenoord_Selligent_Integration
             DataTable ds = new DataTable();
             da.Fill(ds);
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -130,6 +134,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -146,7 +151,7 @@ namespace Feyenoord_Selligent_Integration
             DataTable ds = new DataTable();
             da.Fill(ds);
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -159,6 +164,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -174,7 +180,7 @@ namespace Feyenoord_Selligent_Integration
             DataTable ds = new DataTable();
             da.Fill(ds);
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -187,6 +193,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -202,7 +209,7 @@ namespace Feyenoord_Selligent_Integration
             DataTable ds = new DataTable();
             da.Fill(ds);
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -345,6 +352,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -359,7 +367,7 @@ namespace Feyenoord_Selligent_Integration
             cmd.Parameters.Add("@ErrorMessage", _errormessage);
             cmd.ExecuteNonQuery();
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion
@@ -370,6 +378,7 @@ namespace Feyenoord_Selligent_Integration
             #region establish sql connection
             SqlConnection sqlconn = new SqlConnection(Properties.Settings.Default.SQLConn);
             SqlCommand cmd = new SqlCommand();
+            cmd.CommandTimeout = 0;
             #endregion
 
             #region open connection
@@ -387,7 +396,7 @@ namespace Feyenoord_Selligent_Integration
             cmd.Parameters.Add("@RC", RC);
             cmd.ExecuteNonQuery();
 
-            #region open connection
+            #region close connection
             if (sqlconn.State == ConnectionState.Open)
                 sqlconn.Close();
             #endregion

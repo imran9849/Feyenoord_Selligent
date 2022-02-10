@@ -2,16 +2,16 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Feyenoord_Selligent_Integration.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="SQLConn" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=sql-prd-02.sportsalliance.com;Initial Catalog=Feyenoord_Selligent_Integration;Persist Security Info=True;User ID=sa-admin;Password=100%of22is22&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=sql-prd-02.sportsalliance.com;Initial Catalog=Feyenoord_Selligent_Integration;Persist Security Info=True;User ID=sa-admin;Password=100%of22is22</Value>
-    </Setting>
     <Setting Name="KeepOpen" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SQLConn" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=localhost;Initial Catalog=Feyenoord_Selligent_Integration;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=localhost;Initial Catalog=Feyenoord_Selligent_Integration;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>
